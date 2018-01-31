@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h3><small> (<a href="/{{page.title}}">Similar</a>)</small></h3>
+  <h4>by <a href="PLACEHOLDER-AUTHOR-URL">{{page.title}}</a></h4>
+  <div>{{page.title}}</div>
+  <hr/>
+  <div>CONTENIDO</div>
+  <div class="page-body">{{page.content}}</div>
+  <hr/>
+  <a href="PLACEHOLDER_URL_TITLE/edit" class="btn btn-primary">edit this page</a>
+  <a href="PLACEHOLDER_URL_TITLE/delete" class="btn btn-danger">delete this page</a>
+{% endblock %}

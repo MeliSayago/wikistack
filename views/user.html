@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <ul style="margin-top: 100px">
+      {% for user in users %}
+        <li><a href="/users/{{ user.id }}">{{ user.name }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <ul style="margin-top: 100px">
+      {% for page in pages %}
+      	<li><a href="/users/{{users.id}}">{{users.name}}</a></li>
+      	<li><a href="/users/{{users.id}}">{{users.email}}</a></li>
+        <li><a href="{{ page.urlTitle }}">{{ page.title }}</a></li>
+      {% endfor %}
+      
+    </ul>
+
+{% endblock %}
